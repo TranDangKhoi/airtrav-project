@@ -1,0 +1,59 @@
+@import "../mixins";
+@import "../variables";
+
+.banner {
+  padding: 6px 135px;
+
+  .banner-left {
+    width: 502px;
+  }
+
+  .banner-heading {
+    font-size: 64px;
+    font-weight: 800;
+    &--black {
+      color: var(--gray-2, #353945);
+    }
+    &--yellow {
+      color: #f5b318;
+    }
+  }
+
+  .banner-description {
+    color: var(--gray-3, #777e90);
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  .banner-search-button {
+    margin-top: 48px;
+    padding: 8px 8px 8px 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 31px;
+    box-shadow: -16px 22px 42px 0px rgba(0, 31, 77, 0.12);
+    border: none;
+    background: #fff;
+    max-width: 317px;
+    width: 100%;
+  }
+
+  .banner-search-text {
+    color: var(--gray-1, #23262f);
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .banner-search-arrow {
+    width: 52px;
+    height: 52px;
+    border-radius: 9999px;
+    background-color: $primaryBlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -5,12 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Airtrav</title>
     <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="./images/logo.svg" />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"
     />
+    <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/navbar/navbar.css" />
+    <link rel="stylesheet" href="styles/banner/banner.css" />
+    <script
+      src="https://kit.fontawesome.com/5e5aa9c9c8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav class="airtrav-navbar"></nav>
+    <nav class="navigation-bar">
+      <div class="navigation-bar-left">
+        <img src="./images/logo.svg" alt="Logo" />
+        <h3 class="navigation-bar-title">Airtrav</h3>
+      </div>
+      <div class="navigation-bar-middle">
+        <a href="#" class="navigation-bar-link">Things To Do</a>
+        <a href="#" class="navigation-bar-link">Tour</a>
+        <a href="#" class="navigation-bar-link">Blog</a>
+      </div>
+      <div class="navigation-bar-right">
+        <a href="#" class="navigation-bar-text">USD</a>
+        <a href="#" class="navigation-bar-text">FAQ</a>
+        <a href="#" class="navigation-bar-icon">
+          <svg
+            width="25"
+            height="25"
+            viewBox="0 0 25 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M17.2364 17.085H8.2363V10.5848C8.2363 8.08467 10.2363 6.08459 12.7363 6.08459C15.2364 6.08459 17.2364 8.08467 17.2364 10.5848V17.085ZM19.2383 16.0851V10.5849C19.2383 7.51479 17.0983 4.9447 14.2383 4.26467V3.58465C14.2383 2.75619 13.5667 2.08459 12.7383 2.08459C11.9099 2.08459 11.2383 2.75619 11.2383 3.58465V4.26467C8.36828 4.9447 6.23828 7.51479 6.23828 10.5849V16.0851L4.23828 18.0852V19.0852H21.2383V18.0852L19.2383 16.0851ZM12.7382 22.0847C13.8428 22.0847 14.7382 21.1892 14.7382 20.0846H10.7382C10.7382 21.1892 11.6337 22.0847 12.7382 22.0847Z"
+              fill="#777E91"
+            />
+          </svg>
+        </a>
+        <span class="navigation-bar-border"></span>
+        <img
+          src="https://images.unsplash.com/photo-1704949834515-e9d11a0ceb9a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Avatar"
+          class="navigation-bar-avatar"
+        />
+        <svg
+          class="navigation-bar-burger"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 8C4.44772 8 4 8.44772 4 9C4 9.55228 4.44772 10 5 10H19C19.5523 10 20 9.55228 20 9C20 8.44772 19.5523 8 19 8H5Z"
+            fill="#777E91"
+          />
+          <path
+            d="M5 14C4.44772 14 4 14.4477 4 15C4 15.5523 4.44772 16 5 16H19C19.5523 16 20 15.5523 20 15C20 14.4477 19.5523 14 19 14H5Z"
+            fill="#777E91"
+          />
+        </svg>
+      </div>
+    </nav>
+    <section class="banner">
+      <div class="banner-left">
+        <h1 class="banner-heading">
+          <span class="banner-heading banner-heading--black"
+            >Travel Planning Made</span
+          >
+          <span class="banner-heading banner-heading--yellow">Easy</span>
+          <img src="./images/banner-wave.svg" alt="" class="" />
+        </h1>
+        <p class="banner-description">
+          We make it easy to plan and book your next trip with a Day by Day
+          itinerary.
+        </p>
+        <button class="banner-search-button">
+          <span class="banner-search-text">Plan a Trip</span>
+          <span class="banner-search-arrow">
+            <img src="./images/arrow-right.svg" alt="" />
+          </span>
+        </button>
+      </div>
+      <div class="banner-right"></div>
+    </section>
   </body>
 </html>

@@ -1,5 +1,77 @@
-.airtrav-navbar {
-  width: 100px;
-  height: 100px;
-  background-color: #58c27d;
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url("../../fonts/Gilroy-Bold.ttf");
+}
+.navigation-bar {
+  background-color: #fff;
+  padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-bar-left {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.navigation-bar-middle {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.navigation-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navigation-bar-link {
+  color: var(--gray-2, #353945);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.navigation-bar-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-bar-text {
+  color: var(--gray-3, #777e90);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navigation-bar-title {
+  font-family: "Gilroy Bold", sans-serif;
+  font-size: 20px;
+}
+
+.navigation-bar-border {
+  width: 1px;
+  height: 32px;
+  opacity: 0.5;
+  background: var(--gray-4, #b1b5c3);
+}
+
+.navigation-bar-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-bar-burger {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navigation-bar-middle {
+    display: none;
+  }
 }/*# sourceMappingURL=navbar.css.map */
